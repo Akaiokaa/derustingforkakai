@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ListPractice {
 
@@ -21,14 +22,20 @@ public class ListPractice {
     System.out.println(list+ " " + list.size());
     // Check whether the list contains a certain string
     System.out.println(list.contains("Cake") );
+    System.out.println();
     // Iterate over the list using a traditional for-loop.
     // Print each index and value on a separate line
-    
+    for(int i = 0; i < list.size(); i++){
+      System.out.println(list.get(i));
+    }
     // Sort the list using the Collections library
-
+    Collections.sort(list);
+    System.out.println();
     // Iterate over the list using a for-each loop
     // Print each value on a second line
-
+    for(String dessert : list){
+      System.out.println(dessert);
+    }
     /*
      * Usage tip!
      * 
